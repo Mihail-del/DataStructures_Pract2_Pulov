@@ -4,11 +4,10 @@ public class Main {
 
     public static void main(String[] args) {
         // ===== TASK ONE =====
-//        BankAccount ba = new BankAccount("sfsfsfcs", 100);
+//        BankAccount ba = new BankAccount("toJ3stK0nt0wP1erwsz1mTaske", 100);
 //        System.out.println("Balance is: " + ba.getBalance());
 //        ba.deposit(110);
 //        System.out.println("Balance is: " + ba.getBalance());
-
 
         // ===== TASK TWO =====
 //        int[] array1 = new int[]{1, 5, 2, 9, 2};
@@ -20,9 +19,5 @@ public class Main {
 //        System.out.println("Min: "+ArrayStat.findMin(array2));
 //        System.out.println("Max: "+ArrayStat.findMax(array2));
 //        System.out.println("Avg: "+ArrayStat.findAvg(array2));
-
-
-        // ===== TASK TWO =====
-
     }
 }

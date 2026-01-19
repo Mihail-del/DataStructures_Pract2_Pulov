@@ -6,7 +6,7 @@ class BankAccountTest {
 
     @Test
     void depositShouldIncreaseBalance() {
-        BankAccount account = new BankAccount("sjosivsomvojs", 100.0);
+        BankAccount account = new BankAccount("toJ3stK0nt0wT3st0wymTaske", 100.0);
         account.deposit(50.0);
         System.out.println(account.getBalance());
     }
