@@ -31,4 +31,12 @@ public class BankAccount {
             System.out.println("Deposited " + amount + " to balance.");
         }
     }
+
+    @Override
+    public String toString() {
+        return "BankAccount{" +
+                "accountNumber='" + accountNumber + '\'' +
+                ", balance=" + balance +
+                '}';
+    }
 }
