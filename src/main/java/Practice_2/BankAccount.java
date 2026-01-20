@@ -5,12 +5,18 @@ public class BankAccount {
     private double balance;
 
     public BankAccount(String accountNumber, double initialBalance) {
-        this.accountNumber = accountNumber;
+        // Check if accountNumber is not negative
+        if (accountNumber == null||accountNumber.isEmpty()) {
+            throw new IllegalArgumentException("accountNumber cannot be null");
+        }
+        else {
+            this.accountNumber = accountNumber;
+        }
 
         // Check if balance is not negative
         if (initialBalance < 0) {
-            System.out.println("Invalid initial balance. Must be greater than zero.");
             this.balance = 0;
+            throw new IllegalArgumentException("initial balance cannot be negative");
         }
         else {
             this.balance = initialBalance;
