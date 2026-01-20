@@ -38,6 +38,19 @@ public class BankAccount {
         }
     }
 
+    public void withdraw(double amount) {
+        // Check if amount is not negative
+        if (amount < 0) {
+            throw new IllegalArgumentException("Invalid amount. Must be greater than zero.");
+        }
+        else if (amount > balance) {
+            throw new IllegalArgumentException("Not enough balance.");
+        }
+        else {
+            this.balance -= amount;
+        }
+    }
+
     @Override
     public String toString() {
         return "BankAccount{" +
